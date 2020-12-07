@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/llHomePageItem"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:weightSum="6"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgRestroImage"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1.8"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bydefault_restro_pic"
+            />
+
+        <RelativeLayout
+            android:layout_weight="3.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtRestaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant_name"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txtCostPerPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cost_per_person"
+                android:layout_below="@id/txtRestaurantName"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imgBtnFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/ic_button_state_not_fav"
+                android:background="#fff"/>
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_5"
+                android:textColor="#ffca28"
+                android:layout_below="@id/imgBtnFav"
+                android:padding="15dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
